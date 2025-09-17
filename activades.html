@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asorapaima</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <style>
+        .navbar {
+            background-color: #4B692B;
+        }
+
+        .nav-item {
+            margin-right: 50px;
+        }
+
+        .nav-link {
+            color: #D9BF77;
+        }
+
+        .background-image {
+            background-image: url('imagenes/pez.jpeg');
+            background-size: 100% 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .h1-title {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .btn-empecemos {
+            background-color: #D9BF77;
+            color: #4B692B;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn-empecemos:hover {
+            background-color: #4B692B;
+            color: #D9BF77;
+        }
+
+        #descripcion {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .footer {
+            background-color: #4B692B;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .footer .list-inline {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer .list-inline-item {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .footer a i {
+            color: white;
+        }
+
+        .title-box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .title-box h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4B692B;
+        }
+
+        .btn {
+            background-color: #D9BF77;
+            color: white;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: #4B692B;
+        }
+
+        .p {
+            text-align: justify;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px 0;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #D9BF77;
+            color: #4B692B;
+        }
+
+        br {
+            line-height: 20px;
+        }
+
+        .result-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 20px;
+            border: black 1px solid;
+            
+        }
+
+        .result-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Asorapaima</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="activades.html">Actividades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="integrantes.html">Integrantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactos.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="title-box">
+                    <h1>Extracción de aceites vegetales por prensado mecánico en frío</h1>
+                    <p style="text-align: justify;">El proceso de extracción se realizó receptando
+                        las semillas de sacha inchi así mismo las de
+                        ajonjolí y maní, cada una de estas semillas deben
+                        estar previamente secas con una humedad
+                        aproximada de 5 a 7 % para obtener la mayor
+                        cantidad posible de aceite en el prensado, se
+                        proceden a seleccionar las de mejor condición
+                        para poder pasar al prensado de cada una de
+                        ellas por medio de una prensa hidráulica
+                        ejerciendo una presión de trabajo de 246 – 250
+                        Bar que funciona con un mecanismo de cilindro
+                        émbolo manipulado mediante un tablero
+                        eléctrico, mientras que el aceite obtenido es
+                        expulsado cayendo sobre una bandeja de acero
+                        inoxidable donde fue recogido para
+                        posteriormente ser filtrado mediante placas
+                        filtro donde se eliminó cualquier residuo o
+                        material extraño para así ser embotellado y
+                        sellado.</p>
+                    <br>
+                    <img src="imagenes/aceites.jpeg" alt="aceite" width="60%">
+                </div>
+                <h1>Documentación</h1>
+                <a style="background-color: cadetblue;" href="documentos/Articulo 1.pdf"
+                    download="Articulo 1.pdf">Artículo 1</a>
+
+                <a style="background-color: cadetblue;" href="documentos/Articulo 2.pdf"
+                    download="Articulo 1.pdf">Artículo 2</a>
+
+                <a style="background-color: cadetblue;" href="documentos/Articulo 3.pdf"
+                    download="Articulo 1.pdf">Artículo 3</a>
+
+                <a style="background-color: cadetblue;" href="documentos/Articulo 4.pdf"
+                    download="Articulo 1.pdf">Artículo 4</a>
+
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="title-box">
+                    <h1>Elaboración de la conserva de paiche en envases de lata y vidrio</h1>
+                    <p style="text-align: justify;">Consistió en la recepción de dos tipos de cortes
+                        (Lomo y Vientre) con las adecuadas
+                        características de frescura, se tomaron 4 kg de
+                        paiche el cual se dividió de la siguiente manera:
+                        1 kg de pescado paiche corte lomo y 1 kg de
+                        corte vientre para realizar las conservas en
+                        envases de lata sucediendo lo mismo para las
+                        conservas de vidrio completando un total de 4
+                        kg, posterior a esto se procedió añadir trozos de
+                        pescado de 150g de cada uno de los cortes de
+                        paiche (lomo y vientre) en los envases de lata
+                        mientras que para los envases de vidrio se
+                        colocaron 215 g de cada uno, una vez colocado
+                        en los envases de lata y vidrio fueron llevados al
+                        autoclave donde se realizó una pre cocción a una
+                        temperatura de 100°C a una presión de 4 lb/
+                        plg2 por un tiempo de 15 min, culminado el
+                        tiempo se realizó el vaciado del agua para poder
+                        agregar el líquido de gobierno (aceites de
+                        oleaginosas) fueron agregados en una cantidad
+                        de 60 ml para las conservas en envase de latas y
+                        80 ml para las conservas de envases de vidrio,
+                        luego de esto fueron colocados en un túnel de
+                        exhausting para realizar una pre esterilización
+                        con el fin de eliminar el oxígeno presente en el
+                        producto y así evitar que surjan defectos en el
+                        producto final, al salir del túnel de exhausting se
+                        realizó una esterilizados en el autoclave por un
+                        tiempo de 60 min una vez que la presión llega a 14 lb/plg2 y a una temperatura de 120 ºC, para
+                        ser almacenados</p>
+                    <br>
+                    <img src="imagenes/conserva.jpeg" alt="conservas" width="70%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <h1>Resultados</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card result-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Estudio del perfil de ácidos grasos de aceites de oleaginosa</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card result-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Análisis proximal de aceites de oleaginosas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card result-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Características bromatológicas de las conservas de paiche (Arapaimas gigas)</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card result-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Características físicas de las conservas de paiche (Arapaimas gigas) en envases de lata</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card result-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Características organolépticas de las conservas de paiche (Arapaimas gigas)</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <p>&copy;UNIVERSIDAD DE LAS FUERZAS ARMADAS - ESPE SEDE
+                        SANTO DOMINGO</p>
+
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline text-right" style="color: white; padding: 0; margin: 0;">
+                        <li class="list-inline-item" style="margin-right: 10px;">
+                            <a href="https://www.facebook.com/tupagina" target="_blank" title="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item" style="margin-right: 10px;">
+                            <a href="https://www.instagram.com/tupagina" target="_blank" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item" style="margin-right: 10px;">
+                            <a href="https://twitter.com/tupagina" target="_blank" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item" style="margin-right: 10px;">
+                            <a href="mailto:contacto@tupagina.com" title="Correo electrónico">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="tel:+1234567890" title="Número de teléfono">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="path/to/your/jquery-3.6.0.min.js"><\/script>')</script>
